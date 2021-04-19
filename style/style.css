@@ -74,6 +74,11 @@ h2 {
   border-radius: 5px;
 }
 
+.top-round {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 /* HEADER NAV  */
 
 header {
