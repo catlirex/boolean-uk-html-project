@@ -1,0 +1,208 @@
+.hero {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-image: url(../assets/image/barcelona-park-guell.jpeg);
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--blue);
+  background-color: var(--white);
+  display: inline-block;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--darkred);
+  background-color: var(--white);
+  display: block;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--orange);
+  background-color: var(--white);
+  display: inline-block;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .container {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+}
+
+/* PROMOTION BANNER  */
+
+.promotion {
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--orange);
+  height: 200px;
+  width: 300px;
+}
+
+/* ACTIVITY CARD */
+.card-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 250px);
+}
+
+.activity-card {
+  position: relative;
+  box-shadow: 0 0 3px 2px gray;
+}
+
+.activity-card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.activity-card h3 {
+  padding: var(--card-padding);
+}
+
+.best-sell {
+  background-color: var(--red);
+  padding: 5px;
+
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  position: absolute;
+  top: 170px;
+  left: 170px;
+}
+
+.activity-card .container {
+  display: grid;
+  grid-template:
+    "review review" auto
+    "booked price" auto
+    "feature price" auto/
+    auto auto;
+
+  padding: var(--card-padding);
+}
+
+.activity-card svg {
+  width: 15px;
+}
+
+.activity-card svg.star-icon {
+  fill: var(--orange);
+}
+
+.activity-card svg.fire {
+  color: var(--orange);
+}
+
+.card-review {
+  grid-area: review;
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-flow: column;
+  align-items: center;
+  max-inline-size: fit-content;
+}
+
+.card-booked {
+  grid-area: booked;
+  padding: 5px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2px;
+  align-items: center;
+  max-inline-size: fit-content;
+}
+
+.card-feature {
+  grid-area: feature;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2px;
+  align-items: center;
+  max-inline-size: fit-content;
+}
+
+.card-price {
+  grid-area: price;
+  justify-self: right;
+}
+
+.activity-card span {
+  font-size: 0.8rem;
+}
+.original {
+  display: block;
+  color: #808080;
+  text-decoration: line-through;
+  padding-bottom: 5px;
+}
+
+.card-price .current {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+/* FOOTER  */
+footer {
+  background-color: var(--blue);
+  margin-top: 50px;
+  padding: 30px 0;
+}
+
+footer nav {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+footer h2 {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+footer li {
+  padding: 5px 0;
+}
+
+footer a {
+  padding: 10px;
+  color: rgb(171, 171, 171);
+  font-size: 0.8rem;
+}
+
+.social {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  inline-size: max-content;
+}
+
+.social img {
+  width: 30px;
+}

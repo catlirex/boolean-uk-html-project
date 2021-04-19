@@ -1,0 +1,127 @@
+/* BASE STYLING  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  --orange: #edbc00;
+  --blue: #004c99;
+  --darkred: #a70042;
+  --white: #ffffff;
+  --red: #db002c;
+  --yellow: #ffee00;
+
+  --card-padding: 5px 12px;
+}
+
+.remove-style {
+  appearance: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  border: inherit;
+  border-style: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  padding: 10px;
+  color: var(--blue);
+}
+
+/* Utility Classes */
+.two-column {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1200px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.round-end {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+/* HEADER NAV  */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+header .wrapper {
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80px;
+}
+
+header ul {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 24px 10px;
+}
+
+nav svg {
+  width: 15px;
+  height: 15px;
+}
+
+nav img.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.my-booking {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--orange);
+  padding: 10px;
+}
+
+.my-account {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5px;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 10px;
+}
