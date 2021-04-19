@@ -169,10 +169,28 @@
   color: var(--blue);
 }
 
+/* PARTNERS  */
+.partners {
+  background-color: #e4e4e48e;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+
+.partners ul {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  padding: 10px 0;
+}
+
+.partners img {
+  height: 100px;
+}
+
 /* FOOTER  */
 footer {
   background-color: var(--blue);
-  margin-top: 50px;
+
   padding: 30px 0;
 }
 
