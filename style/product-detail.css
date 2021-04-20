@@ -1,0 +1,263 @@
+.wrapper-small-padleft {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1200px;
+
+  padding-right: 300px;
+  padding-left: 50px;
+}
+
+/* CAROUSEL  */
+
+.carousel img {
+  height: 400px;
+  max-width: 1000px;
+  object-fit: cover;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 5px;
+}
+
+.slides {
+  display: flex;
+
+  overflow: auto;
+}
+
+.move-left,
+.move-right {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+  align-self: center;
+  box-shadow: 0px 0px 3px 1px #808080;
+}
+
+/* PRODUCT HEAD  */
+
+.product-head {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+svg {
+  width: 20px;
+  fill: #808080;
+}
+
+.feature {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  grid-gap: 20px;
+}
+
+.product-head .two-column {
+  place-items: center;
+  grid-gap: 5px;
+  width: max-content;
+}
+
+hr {
+  margin: 20px 0;
+  max-width: 700px;
+  border-top: 1px solid #e4e4e4;
+}
+
+span {
+  color: #808080;
+}
+
+.card-review svg.star-icon {
+  fill: var(--orange);
+}
+
+.price-card {
+  box-shadow: 0 0 5px 0px #808080;
+  padding: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: max-content;
+  height: 200px;
+}
+
+.option-button {
+  background-color: var(--red);
+  padding: 10px;
+  text-align: center;
+}
+
+.option-button span {
+  color: var(--white);
+}
+
+span.promotion {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 5px;
+}
+
+.product-head li {
+  list-style: inside;
+  padding: 5px 0;
+}
+
+/* RECENT REVIEW  */
+.recent-review {
+  background-color: #ebebeb;
+  padding: 10px 50px;
+  display: grid;
+  grid-template:
+    "header header" auto
+    ". ." auto
+    "more more" auto/
+    auto auto;
+
+  grid-gap: 10px;
+}
+
+.recent-review h2 {
+  grid-area: header;
+}
+
+.review-card {
+  display: grid;
+  grid-template:
+    "avatar content" auto
+    "name content" auto/
+    100px auto;
+
+  grid-template-rows: max-content;
+  grid-gap: 10px;
+}
+
+.review-card .avatar {
+  grid-area: avatar;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.review-card .name {
+  grid-area: name;
+  justify-self: center;
+}
+
+.review-card .review-content {
+  grid-area: content;
+  background-color: white;
+  padding: 15px;
+  display: grid;
+  grid-gap: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.review-triangle {
+  fill: white;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+a.more {
+  grid-area: more;
+  color: blue;
+  justify-self: right;
+  padding: 10px;
+}
+
+/* PACKAGE OPTION  */
+.package-option {
+  padding-top: 20px;
+}
+.option-list {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.option-list li {
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0px gray;
+  padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.option-list h3 {
+  display: inline-block;
+}
+
+.option-list span {
+  font-weight: 900;
+  color: var(--blue);
+}
+
+.book-now {
+  color: white;
+  background-color: var(--red);
+  padding: 10px 5px;
+}
+
+/* FULL DESCRIPTION */
+
+.content p {
+  padding: 10px 0;
+}
+
+.content ul {
+  list-style: outside;
+  padding: 10px 30px;
+}
+
+.content li {
+  padding: 10px 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+  padding-bottom: 50px;
+}
+
+/* SIDE NAV  */
+.side-nav {
+  position: sticky;
+  top: 200px;
+  float: right;
+  right: 5px;
+
+  width: 200px;
+
+  padding: 15px;
+
+  background-color: var(--blue);
+
+  box-shadow: 0 0 3px 1px gray;
+}
+
+.side-nav ul {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.side-nav li {
+  background-color: white;
+  border-radius: 5px;
+  color: var(--blue);
+  padding: 5px;
+}
