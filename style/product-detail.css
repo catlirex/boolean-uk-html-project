@@ -173,7 +173,7 @@ span.promotion {
 a.more {
   grid-area: more;
   color: blue;
-  justify-self: right;
+  text-align: right;
   padding: 10px;
 }
 
@@ -234,6 +234,22 @@ a.anchor {
   padding-bottom: 50px;
 }
 
+/* MAP */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 /* SIDE NAV  */
 .side-nav {
   position: sticky;
@@ -260,4 +276,82 @@ a.anchor {
   border-radius: 5px;
   color: var(--blue);
   padding: 5px;
+}
+
+/* Bottom Buy Now */
+.buy-now {
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 0px 2px 0 gray;
+  position: sticky;
+  bottom: 0;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  justify-content: center;
+  place-items: center;
+}
+
+.option {
+  color: var(--darkred);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--darkred);
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .product-head {
+    padding: 20px 50px;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+  span.promotion {
+    text-align: center;
+  }
+
+  .recent-review {
+    display: block;
+  }
+
+  .review-card .review-content {
+    font-size: 0.8rem;
+  }
+
+  .recent-review a.more {
+    color: blue;
+    text-align: right;
+    display: block;
+  }
+
+  .wrapper-small-padleft {
+    padding-right: 200px;
+  }
+
+  .side-nav {
+    position: sticky;
+    top: 200px;
+    float: right;
+    right: 5px;
+
+    width: 150px;
+    padding: 15px;
+
+    background-color: var(--blue);
+    box-shadow: 0 0 3px 1px gray;
+
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .side-nav {
+    display: none;
+  }
+  .wrapper-small-padleft {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

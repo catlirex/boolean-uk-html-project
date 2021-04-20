@@ -55,24 +55,32 @@
   padding: 20px 10px;
 }
 
+.banner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .promotion {
   border-width: 2px;
   border-style: solid;
   border-color: var(--orange);
-  height: 200px;
-  width: 300px;
+  width: 100%;
 }
 
 /* ACTIVITY CARD */
+.top-activity {
+  padding: 0 50px;
+}
 .card-list {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, 250px);
 }
 
 .activity-card {
   position: relative;
-  box-shadow: 0 0 3px 2px gray;
+  box-shadow: 0 0 3px 0px gray;
 }
 
 .activity-card img {
@@ -176,7 +184,7 @@
 
 .cat-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
   grid-gap: 20px;
 }
@@ -186,7 +194,7 @@
 }
 
 .cat-list img {
-  width: 350px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
 }
@@ -211,4 +219,10 @@
 
 .partners img {
   height: 100px;
+}
+
+@media only screen and (max-width: 960px) {
+  .banner-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }

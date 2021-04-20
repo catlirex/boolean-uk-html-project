@@ -61,6 +61,11 @@ p {
   grid-template-columns: auto auto;
 }
 
+.three-column {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
 .wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -197,4 +202,41 @@ footer a {
   padding: 5px;
   color: #808080;
   content: "/\00a0";
+}
+
+/* Search bar */
+.search {
+  border: 2px solid #80808041;
+
+  margin: 10px;
+  height: 40px;
+
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-self: center;
+  margin: 0 0px;
+}
+
+.search-icon {
+  width: 20px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.search-bar {
+  border: none;
+}
+
+.search-bar input {
+  border: none;
+  margin: 0 10px;
+  width: 80%;
+  font-family: inherit;
+  font-size: inherit;
+
+  height: 100%;
+}
+
+input:focus {
+  outline: none;
 }
