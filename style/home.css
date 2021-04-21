@@ -287,7 +287,6 @@
 
 .slides {
   display: flex;
-
   overflow: auto;
 }
 
