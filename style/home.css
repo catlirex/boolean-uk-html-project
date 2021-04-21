@@ -347,4 +347,9 @@
   .carousel {
     display: grid;
   }
+
+  .best-sell {
+    top: 10px;
+    left: 10px;
+  }
 }
