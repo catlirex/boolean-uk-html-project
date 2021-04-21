@@ -135,6 +135,11 @@ img.avatar {
   padding: 10px;
 }
 
+.my-booking:hover {
+  text-decoration: none;
+  background-color: #edbe0020;
+}
+
 .my-account {
   display: grid;
   grid-auto-flow: column;
@@ -142,6 +147,14 @@ img.avatar {
   align-items: center;
   background-color: var(--orange);
   padding: 10px;
+
+  opacity: 0.8;
+  transition: 0.1s all;
+}
+
+.my-account:hover {
+  text-decoration: none;
+  opacity: 1;
 }
 
 .my-account-small {

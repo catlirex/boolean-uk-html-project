@@ -94,6 +94,13 @@ span {
   background-color: var(--red);
   padding: 10px;
   text-align: center;
+  opacity: 0.8;
+  transition: 0.1s;
+}
+
+.option-button:hover {
+  text-decoration: none;
+  opacity: 1;
 }
 
 .option-button span {
@@ -209,6 +216,14 @@ a.more {
   color: white;
   background-color: var(--red);
   padding: 10px 5px;
+
+  transition: 0.1s all;
+  opacity: 0.8;
+}
+
+.book-now:hover {
+  text-decoration: none;
+  opacity: 1;
 }
 
 /* FULL DESCRIPTION */
@@ -258,11 +273,9 @@ a.anchor {
   right: 3vw;
 
   width: 200px;
-
-  padding: 15px;
+  padding: 15px 10px;
 
   background-color: var(--blue);
-
   box-shadow: 0 0 3px 1px gray;
 }
 
@@ -272,10 +285,18 @@ a.anchor {
 }
 
 .side-nav li {
-  background-color: white;
+  background-color: #d8ecff;
   border-radius: 5px;
   color: var(--blue);
   padding: 5px;
+}
+
+.side-nav li:hover {
+  background-color: white;
+}
+
+.side-nav a:hover {
+  text-decoration: none;
 }
 
 /* bottom Buy Now */
@@ -302,6 +323,13 @@ a.anchor {
   border-style: solid;
   border-color: var(--darkred);
   padding: 10px 5px;
+  text-decoration: none;
+
+  transform: 0.1s all;
+}
+
+.option:hover {
+  background-color: #a7004220;
   text-decoration: none;
 }
 
@@ -340,7 +368,6 @@ a.anchor {
     right: 5px;
 
     width: 150px;
-    padding: 15px;
 
     background-color: var(--blue);
     box-shadow: 0 0 3px 1px gray;
