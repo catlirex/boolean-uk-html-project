@@ -255,7 +255,7 @@ a.anchor {
   position: sticky;
   top: 200px;
   float: right;
-  right: 5px;
+  right: 3vw;
 
   width: 200px;
 
@@ -278,19 +278,22 @@ a.anchor {
   padding: 5px;
 }
 
-/* Bottom Buy Now */
+/* bottom Buy Now */
+
 .buy-now {
   height: 50px;
   background-color: white;
   box-shadow: 0 0px 2px 0 gray;
   position: sticky;
   bottom: 0;
+  padding: 0 10px;
 
   display: grid;
   grid-auto-flow: column;
   grid-gap: 20px;
   justify-content: center;
   place-items: center;
+  z-index: 1;
 }
 
 .option {
@@ -353,5 +356,13 @@ a.anchor {
   .wrapper-small-padleft {
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .buy-now h2 {
+    font-size: 1rem;
+  }
+
+  .buy-now span {
+    font-size: 0.8rem;
   }
 }

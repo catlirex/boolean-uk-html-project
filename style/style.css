@@ -122,7 +122,7 @@ nav svg {
   height: 15px;
 }
 
-nav img.avatar {
+img.avatar {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -144,7 +144,16 @@ nav img.avatar {
   padding: 10px;
 }
 
-/* FOOTER  */
+.my-account-small {
+  border-radius: 50%;
+  display: none;
+}
+
+.my-account-small img {
+  width: 30px;
+  height: 30px;
+}
+
 /* FOOTER  */
 footer {
   background-color: var(--blue);
@@ -181,6 +190,22 @@ footer a {
 
 .social img {
   width: 30px;
+}
+
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  display: none;
+}
+
+.mobile-menu ul {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  height: 50px;
 }
 
 /* BREADCRUMBS  */
@@ -239,4 +264,40 @@ footer a {
 
 input:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 640px) {
+  footer nav {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .my-account-small {
+    display: block;
+  }
+
+  .my-account {
+    display: none;
+  }
+
+  .card-list {
+    display: block;
+    width: 100%;
+  }
+
+  .activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
 }
