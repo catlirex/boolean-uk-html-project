@@ -1,0 +1,100 @@
+.furture {
+  padding: 30px 10px;
+}
+
+.record-image {
+  width: 200px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.past-image {
+  width: 200px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  opacity: 0.3;
+}
+
+.furture-card {
+  grid-gap: 20px;
+  box-shadow: 0 0 5px 0 gray;
+  align-items: center;
+  padding-right: 10px;
+  margin: 10px 0;
+}
+
+span {
+  color: gray;
+  display: block;
+  padding: 3px 0;
+  font-size: 0.9rem;
+}
+
+.view-ticket {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.redeemed-ticket,
+.cancel-booking {
+  background-color: rgb(188, 186, 186);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.write-review {
+  background-color: var(--red);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-cs {
+  border: 1px solid rgb(188, 186, 186);
+  color: rgb(188, 186, 186);
+  text-align: center;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 960px) {
+  .future-action {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px 0;
+  }
+  .cancel-booking {
+    padding: 10px;
+  }
+  .contact-cs {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .furture-card {
+    grid-template:
+      "info info" auto
+      "image action" auto/
+      auto auto;
+    padding: 20px;
+
+    grid-gap: 5px;
+  }
+
+  .record-image {
+    grid-area: image;
+  }
+
+  .future-info {
+    grid-area: info;
+  }
+
+  .future-action {
+    grid-area: action;
+  }
+}
