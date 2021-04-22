@@ -104,6 +104,8 @@ form input:valid ~ .tick {
 
   position: sticky;
   top: 100px;
+
+  box-shadow: 0 0 5px 0 gray;
 }
 
 .payment-logo {
@@ -123,6 +125,13 @@ button.check-out {
   background-color: var(--orange);
   padding: 5px 0;
   margin: 10px 0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.check-out:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 3px 0 gray;
 }
 
 .payment-card-mobile {

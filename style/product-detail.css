@@ -219,6 +219,7 @@ a.more {
 
   transition: 0.1s all;
   opacity: 0.8;
+  position: relative;
 }
 
 .book-now:hover {
@@ -331,6 +332,45 @@ a.anchor {
 .option:hover {
   background-color: #a7004220;
   text-decoration: none;
+}
+
+/* airplane animation */
+
+.book-now:hover .airplane {
+  display: inline-block;
+  animation: fly 3s linear;
+}
+
+.airplane {
+  width: 30px;
+  height: 20px;
+  opacity: 0;
+  display: none;
+  position: absolute;
+}
+
+@keyframes fly {
+  10% {
+    opacity: 1;
+    transform: translateX(3vw) translateY(-3vh) rotateZ(0deg);
+  }
+
+  15% {
+    transform: translateX(3vw) translateY(-3vh) rotateZ(180deg);
+  }
+
+  45% {
+    transform: translateX(-400%) translateY(-3vh) rotateZ(180deg);
+  }
+
+  50% {
+    transform: translateX(-400%) translateY(-2vh) rotateZ(0deg);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-200%) translateY(0) rotateZ(0deg);
+  }
 }
 
 @media only screen and (max-width: 960px) {
