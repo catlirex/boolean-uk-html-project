@@ -103,6 +103,7 @@ header {
 
 header .wrapper {
   justify-content: space-between;
+  grid-gap: 10px;
 }
 
 .logo {
@@ -165,6 +166,29 @@ img.avatar {
 .my-account-small img {
   width: 30px;
   height: 30px;
+}
+
+.drop-icon {
+  position: relative;
+}
+
+.drop-down {
+  display: inherit;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #004c99;
+  background-color: white;
+  padding: 1rem;
+  opacity: 0;
+  transition: 0.1s all;
+}
+
+.drop-icon .drop-down li {
+  padding: 0.5rem 0px;
+}
+
+.drop-icon:hover .drop-down {
+  opacity: 1;
 }
 
 /* FOOTER  */
