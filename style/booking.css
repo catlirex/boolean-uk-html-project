@@ -1,0 +1,159 @@
+.form-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 900px;
+
+  padding: 50px 10px;
+}
+
+/* remove form style */
+input,
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+select:focus {
+  outline: none;
+}
+
+label {
+  padding: 10px 0;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.input-container {
+  grid-template-columns: 150px auto 1fr;
+  grid-gap: 10px;
+}
+
+select,
+input {
+  width: 200px;
+  display: block;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#opt-in {
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+  align-self: center;
+}
+
+#opt-in:checked {
+  background-color: var(--blue);
+}
+
+.check-box-container {
+  grid-gap: 10px;
+  width: max-content;
+}
+
+form input:focus:invalid {
+  border: 1px solid #a70042;
+}
+
+.tick {
+  visibility: hidden;
+  width: 15px;
+  justify-self: start;
+  align-self: center;
+}
+
+form select:valid ~ .tick,
+form input:valid ~ .tick {
+  visibility: visible;
+}
+
+.form img {
+  width: 120px;
+}
+
+.form span,
+.form h3 {
+  padding: 10px;
+}
+
+.form {
+  padding: 50px 0;
+}
+
+.payment-card {
+  border-width: 5px;
+  border-style: double;
+  border-color: var(--blue);
+  padding: 20px 10px;
+  height: fit-content;
+  width: fit-content;
+
+  position: sticky;
+  top: 100px;
+}
+
+.payment-logo {
+  display: grid;
+  grid-auto-flow: column;
+  max-inline-size: fit-content;
+  place-items: center;
+}
+
+.payment-logo img {
+  width: 50px;
+}
+
+button.check-out {
+  border: none;
+  width: 100%;
+  background-color: var(--orange);
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+.payment-card-mobile {
+  width: 100%;
+  padding: 0 10px;
+  background-color: rgb(247, 233, 207);
+  display: none;
+}
+
+.payment-card-mobile .payment-logo img {
+  width: 30px;
+}
+
+.payment-card-mobile h3,
+.payment-card-mobile h2 {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.payment-card-mobile .container {
+  display: grid;
+}
+
+@media only screen and (max-width: 640px) {
+  .payment-card {
+    display: none;
+  }
+
+  .payment-card-mobile {
+    display: block;
+    position: fixed;
+    top: 80px;
+  }
+}
