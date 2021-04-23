@@ -23,9 +23,10 @@
 }
 
 .slides {
-  display: flex;
-
+  display: grid;
+  grid-auto-flow: column;
   overflow: auto;
+  place-items: center;
 }
 
 .move-left,
@@ -242,6 +243,11 @@ a.more {
   padding: 10px 0;
 }
 
+.content img {
+  width: 100%;
+  max-width: 500px;
+}
+
 a.anchor {
   display: block;
   position: relative;
@@ -431,5 +437,10 @@ a.anchor {
 
   .buy-now span {
     font-size: 0.8rem;
+  }
+
+  iframe {
+    width: 400px;
+    height: 300px;
   }
 }
