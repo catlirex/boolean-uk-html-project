@@ -179,6 +179,7 @@ img.avatar {
   border: 1px solid #004c99;
   background-color: white;
   padding: 1rem;
+  visibility: hidden;
   opacity: 0;
   transition: 0.1s all;
 }
@@ -189,6 +190,7 @@ img.avatar {
 
 .drop-icon:hover .drop-down {
   opacity: 1;
+  visibility: visible;
 }
 
 /* FOOTER  */
